@@ -1,0 +1,139 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>배민 문방구</title>
+    <style>
+        body{
+            margin: 0; padding: 0;
+        }
+        #jpg{
+            text-align: center;
+        }
+   
+        ul{
+        list-style-type: none; margin: 0; padding: 0;
+        overflow: hidden;
+            font-size: 18px;
+             padding: 0 0 0 18%;
+    }
+    li{float: left;
+        padding: 2%;
+       }
+        
+    li a{ display: block; color:black; text-align: center;
+    padding: 16px; text-decoration: none}
+    li a:hover{color:#6c6c6c;}
+        table{
+             width: 80%; height: 20%; padding: 0 0 0 13%;
+        }
+        td{
+            padding: 0.8%;
+        }
+        
+        .footer{
+            height: 100px;
+            background-color:dimgray;
+            color: white
+        }
+        
+    </style>
+</head>
+<body>
+<table style="width: 100%; height: 10%; padding: 1% 0 0 80%">
+    <tr>
+        <td style="padding: 0.1%;"><a href="login.html">로그인</a></td>
+        <td style="padding: 0.1%;"><a href="join.html">회원가입</a></td>
+    </tr>
+</table>
+<div id="jpg">
+   <a href="#"> <img src="images/aa.jpg" alt=""></a>
+</div>
+
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="Price.html">Price</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="#news">Community</a></li>
+        <li><a href="contact">Corlor</a></li>
+        <li><a href="about">Application</a></li>
+    </ul>
+    <hr style="color:antiquewhite">
+ <h2 style="padding: 0 0 0 13%;">사진을 넣어 보겠습니다.</h2>
+<table>
+    <tr>
+       
+        <td><img src="https://lh3.googleusercontent.com/proxy/jJhD4N2NZ8Gn3mLF00lugX_khOLMEH3GzbuNBxNyiB4Rnc_JUjDQxUTP0gqwIGvTLrIaFVdRGk4dqMVQG8ZhfC34WIlXeXI9RjvN03crxmETiuY" alt="" width="260px;" height="330px;"></td>
+        <td><img src="https://lh3.googleusercontent.com/proxy/lAF_BCKUIv_3pcX8qKBdRvV1RwlITcS88PBz81JrqF7G56WtCYFl7M4GrSpTDyIjX2Mu-i1WQlAuSKCrOpADokQdFHlV3Jug_KNPnFRjsOgLNakwKP0QxhhS" alt="" width="260px;" height="330px;"></td>
+        <td><img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2XT/image/1hlGcQayvvVlyVmOd3juhlmn-j8" alt="" width="260px;" height="330px;"></td>
+        <td><img src="https://t2.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2XT/image/pWX3RtRvuzZcydoWWQ39ciml1ZQ" alt="" width="260px;" height="330px;"></td>
+    </tr>
+     <tr>
+        <td><img src="https://spnimage.edaily.co.kr/images/Photo/files/NP/S/2016/03/PS16032400023.jpg" alt="" width="260px;" height="330px;"></td>
+        <td><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F99344E445E4B3D7538F66F" alt="" width="260px;" height="330px;"></td>
+        <td><img src="https://t1.daumcdn.net/cfile/blog/166C8D524D9B0C8F16" alt="" width="260px;" height="330px;"></td>
+        <td><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F996879505E4B3EAF02" alt="" width="260px;" height="330px;"></td>
+    </tr>
+</table>
+   <br>
+   <br>
+   
+    <h2 style="padding: 0 0 0 13%;">지도를 넣어 보겠습니다.</h2>
+    <table>
+        <tr>
+       
+        <td style="padding: 0.8%;">
+            <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR_R56ZFdyNiD_QJNz_eJSZ0zxna7smc0&callback=initMap"
+    async defer></script>
+    
+    <!--
+   * 카카오맵 - 약도서비스
+   * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+   * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+-->
+<!-- 1. 약도 노드 -->
+<div id="daumRoughmapContainer1579875117451" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!-- 2. 설치 스크립트 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+   new daum.roughmap.Lander({
+      "timestamp" : "1579875117451",
+      "key" : "wqt4",
+      "mapWidth" : "700",
+      "mapHeight" : "330"
+   }).render();
+</script>
+       
+        </td>
+        <td style="padding: 0 0 0 0.2%;"><img src="https://www.cosinkorea.com/data/photos/20180522/art_15275578181462_ee38e9.jpg" alt="" width="354px;" height="330px;"></td>
+        </tr>
+        
+    </table>
+    
+    <div class="footer">
+    <address>서울 중구 명동</address>
+    <address>  best web company. &copy; copyright reserved <a href="abx.com"></a></address>
+    </div>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>배민 문방구</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #jpg {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-size: 18px;
+            padding: 0 0 0 18%;
+        }
+
+        li {
+            float: left;
+            padding: 2%;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none
+        }
+
+        li a:hover {
+            color: #6c6c6c;
+        }
+
+        table {
+            width: 80%;
+            height: 20%;
+            padding: 0 0 0 13%;
+        }
+
+        td {
+            padding: 0.8%;
+        }
+
+        .button {
+            background-color:dimgray;
+            border: none;
+            color: white;
+            /*padding: 17px 120px;*/
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <table style="width: 100%; height: 10%; padding: 1% 0 0 80%">
+        <tr>
+            <td style="padding: 0.1%;"><a href="login.html">로그인</a></td>
+            <td style="padding: 0.1%;"><a href="#home">회원가입</a></td>
+        </tr>
+    </table>
+    <div id="jpg">
+        <a href="main.html"><img src="images/aa.jpg" alt=""></a>
+    </div>
+
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="Price.html">Price</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="#news">Community</a></li>
+        <li><a href="contact">Corlor</a></li>
+        <li><a href="about">Application</a></li>
+    </ul>
+    <hr style="color:antiquewhite">
+
+    <br><br>
+    <div style="text-align: center;">
+        <h2>약관동의</h2>
+        <br>
+        <hr width="50%;">
+        <br>
+
+
+        <div style="padding: 0 7% 0 0">
+            <input type="checkbox" name="hobby" value="reading" id="read">
+            <label for="read">배민문방구의 모든 약관을 확인하고 전체 동의합니다. (전체동의, 선택항목도 포함됩니다.)</label>
+
+            <br><br>
+            <div style="padding: 0 32.2% 0 0">
+                <input type="checkbox" name="hobby" value="reading" id="read">
+                <label for="read">(필수) 이용약관 전체보기</label>
+            </div>
+        </div>
+        <br>
+        <form action="">
+        <select name="car" id="" size="7" multiple>
+            <option value="volvo">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="fiat">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="porsche">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="HD">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="ferrai">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+
+        </select>
+           <br><br>
+           
+           <div style="padding: 0 7% 0 0">
+           
+            <div style="padding: 0 32.2% 0 0">
+                <input type="checkbox" name="hobby" value="reading" id="read">
+                <label for="read">(필수) 이용약관 전체보기</label>
+            </div>
+            <br>
+        </div>
+   <select name="car" id="" size="7" multiple>
+            <option value="volvo">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="fiat">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="porsche">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="HD">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+            <option value="ferrai">가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달가나달나달가나달가나달</option>
+
+        </select>
+    </form>
+    <br>
+    <h3>본인 인증방법 선택</h3>
+    
+    <table>
+    <tr>
+    <td>
+    <form action="">
+    <input type="radio" name="gender" value="iphon" id="g1">
+    <label for="g1">휴대폰 본인인증</label>
+    <input type="radio" name="gender" value="email" id="g1">
+    <label for="g1">이메일 인증</label>
+    </form>
+    </td>
+    </tr>
+    </table>
+    <br><br>
+     <button onclick="myFuntion()" class="button"><a href="login.html">로그인</a></button>
+    <button class="button"><a href="join.html">회원가입</a></button>
+    
+    </div>
+
+    
+</body></html>
+
+ 
+
+
